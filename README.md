@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 🎓 TP7 - Architecture React Avancée
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été réalisé dans le cadre du TP7 sur React. Il illustre l'utilisation de concepts avancés tels que JSX, les patterns de composition (HOC, Render Props) et la mise en place de tests automatisés.
 
-## Available Scripts
+L'interface utilisateur a été entièrement repensée avec **Tailwind CSS** pour offrir une expérience de type "Dashboard" moderne et responsive.
 
-In the project directory, you can run:
+![Aperçu du projet](https://img.shields.io/badge/UI-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css)
+![React](https://img.shields.io/badge/Framework-React-61DAFB?style=flat-square&logo=react)
+![Tests](https://img.shields.io/badge/Tests-Jest_%26_RTL-C21325?style=flat-square&logo=jest)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Fonctionnalités implémentées
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Comprendre JSX** : 
+   - Comparaison visuelle entre la syntaxe `JSX` claire et la fonction `React.createElement()` générée par Babel.
+2. **Higher-Order Component (HOC)** : 
+   - Création d'un wrapper `withLogging` qui intercepte et affiche les `props` dans la console du navigateur au rendu du composant.
+3. **Render Props Pattern** : 
+   - Séparation de la logique de données (`DataLoader`) et de la logique d'affichage, permettant une personnalisation totale du rendu UI depuis le composant parent.
+4. **Tests Unitaires et d'Intégration** : 
+   - Utilisation de *Jest* et *React Testing Library* pour vérifier l'affichage des éléments textuels (y compris avec les Emojis via Regex) et simuler l'interaction utilisateur (clic sur un compteur).
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies utilisées
 
-### `npm run build`
+- **React.js** (v18+)
+- **Tailwind CSS** (Styling utilitaire)
+- **Jest** (Test Runner)
+- **React Testing Library** (Tests de composants)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Structure du projet
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+\`\`\`text
+tp7-jsx-tests/
+├── src/
+│   ├── App.js             # Composant principal (Dashboard)
+│   ├── App.test.js        # Test global de l'interface
+│   ├── Counter.js         # Composant compteur interactif
+│   ├── Counter.test.js    # Test d'intégration (clic bouton)
+│   ├── DataLoader.js      # Logique Render Props
+│   ├── Greeting.js        # Composant d'affichage simple
+│   ├── Greeting.test.js   # Test unitaire classique
+│   ├── JSXDemo.js         # Comparaison JSX vs JS pur
+│   ├── withLogging.js     # Composant d'ordre supérieur (HOC)
+│   ├── index.css          # Fichier CSS racine (imports Tailwind)
+│   └── index.js           # Point d'entrée React
+├── tailwind.config.js     # Configuration du design système
+├── package.json           # Dépendances du projet
+└── README.md              # Documentation du projet
+\`\`\`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Installation et lancement
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prérequis
+Assurez-vous d'avoir **Node.js** et **npm** installés sur votre machine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Cloner le dépôt ou naviguer dans le dossier du projet :
+   \`\`\`bash
+   cd tp7-jsx-tests
+   \`\`\`
 
-## Learn More
+2. Installer les dépendances (React, Tailwind, Jest, etc.) :
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Lancer le serveur de développement :
+   \`\`\`bash
+   npm start
+   \`\`\`
+   L'application sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 Lancer les tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Pour vérifier que tous les composants fonctionnent correctement et que le code respecte les spécifications, lancez la commande suivante :
 
-### Analyzing the Bundle Size
+\`\`\`bash
+npm test
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Appuyez sur `a` dans le terminal pour forcer l'exécution de tous les tests.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
