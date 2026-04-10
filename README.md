@@ -4,10 +4,6 @@ Ce projet a été réalisé dans le cadre du TP7 sur React. Il illustre l'utilis
 
 L'interface utilisateur a été entièrement repensée avec **Tailwind CSS** pour offrir une expérience de type "Dashboard" moderne et responsive.
 
-![Aperçu du projet](https://img.shields.io/badge/UI-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css)
-![React](https://img.shields.io/badge/Framework-React-61DAFB?style=flat-square&logo=react)
-![Tests](https://img.shields.io/badge/Tests-Jest_%26_RTL-C21325?style=flat-square&logo=jest)
-
 ---
 
 ## ✨ Fonctionnalités implémentées
@@ -34,7 +30,7 @@ L'interface utilisateur a été entièrement repensée avec **Tailwind CSS** pou
 
 ## 📂 Structure du projet
 
-\`\`\`text
+```
 tp7-jsx-tests/
 ├── src/
 │   ├── App.js             # Composant principal (Dashboard)
@@ -51,7 +47,8 @@ tp7-jsx-tests/
 ├── tailwind.config.js     # Configuration du design système
 ├── package.json           # Dépendances du projet
 └── README.md              # Documentation du projet
-\`\`\`
+
+````
 
 ---
 
@@ -63,20 +60,18 @@ Assurez-vous d'avoir **Node.js** et **npm** installés sur votre machine.
 ### Instructions
 
 1. Cloner le dépôt ou naviguer dans le dossier du projet :
-   \`\`\`bash
+  ```
    cd tp7-jsx-tests
-   \`\`\`
-
+```
 2. Installer les dépendances (React, Tailwind, Jest, etc.) :
-   \`\`\`bash
+```
    npm install
-   \`\`\`
-
+```
 3. Lancer le serveur de développement :
-   \`\`\`bash
+```
    npm start
-   \`\`\`
-   L'application sera accessible sur [http://localhost:3000](http://localhost:3000).
+```
+   L'application sera accessible sur  `[http://localhost:3000](http://localhost:3000).`
 
 ---
 
@@ -84,11 +79,33 @@ Assurez-vous d'avoir **Node.js** et **npm** installés sur votre machine.
 
 Pour vérifier que tous les composants fonctionnent correctement et que le code respecte les spécifications, lancez la commande suivante :
 
-\`\`\`bash
-npm test
-\`\`\`
+```
+npm test -- --watchAll=false
 
+```
 Appuyez sur `a` dans le terminal pour forcer l'exécution de tous les tests.
 
 
+<img width="885" height="988" alt="image" src="https://github.com/user-attachments/assets/8555c851-dfc2-4beb-93c8-6a835a0410e1" />
+
+
+## 📺 Vidéo de Démo
+ la démonstration vidéo de l'application :
+
+
+
+
+
+## 👤 Auteur
+
+* **École Normale Supérieure de Marrakech**
+  
+* **Réalisé par :** SALMA LAKHAL
+  
+* **Filière  :** CLE_INFO_S5
+
+  
+* **Encadré par :** Pr. Mohamed LACHGAR
+
+* **Module :** `Développement Front-End moderne avec React`
 
