@@ -1,3 +1,5 @@
+
+
 # 🎓 TP7 - Architecture React Avancée
 
 Ce projet a été réalisé dans le cadre du TP7 sur React. Il illustre l'utilisation de concepts avancés tels que JSX, les patterns de composition (HOC, Render Props) et la mise en place de tests automatisés.
@@ -91,6 +93,12 @@ Appuyez sur `a` dans le terminal pour forcer l'exécution de tous les tests.
 
 ## 📺 Vidéo de Démo
  la démonstration vidéo de l'application :
+
+
+
+
+https://github.com/user-attachments/assets/8269cbda-1888-40d6-ae79-65b8695f6257
+
 
 
 
